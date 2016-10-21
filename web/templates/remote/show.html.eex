@@ -1,0 +1,14 @@
+<script id="worker1" type="javascript/worker">
+  self.onmessage = function(e) {
+    self.postMessage('msg from worker');
+  };
+</script>
+
+<div id="container">
+  <img id="mjpeg_dest">
+  <div id="press_container">
+    <button class="btn btn-danger" id="press">PRESS</button>
+  </div>
+  <!-- <img id="press" src="images/open_or_close.png" -->
+  <div id="footer"></div>
+</div>
