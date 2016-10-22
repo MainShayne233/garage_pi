@@ -6,15 +6,10 @@ defmodule GaragePi.RemoteController do
   end
 
   def press(conn, _params) do
-    client = [
-      ip: System.get_env("IP"),
-      user: System.get_env("USER"),
-      password: System.get_env("PASSWORD")
-    ]
     spawn fn () ->
-      ElixirPins.turn_on 18, client
-      :timer.sleep(1000)
-      ElixirPins.turn_off 18, client
+      ElixirPins.turn_on 18
+      :timer.sleep(100)
+      ElixirPins.turn_off 18
     end
     json conn, "ok"
   end
