@@ -39,7 +39,8 @@ defmodule GaragePi.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:elixir_pins, "~> 0.0.1"}
+     {:elixir_pins, "~> 0.0.1"},
+     {:exrm, "~> 1.0.8"}
    ]
   end
 
