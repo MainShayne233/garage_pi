@@ -19,7 +19,7 @@ defmodule GaragePi.Mixfile do
   def application do
     [mod: {GaragePi, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :elixir_pins]]
+                    :phoenix_ecto, :postgrex, :elixir_pins, :ssh]]
   end
 
   # Specifies which paths to compile per environment.
